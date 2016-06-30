@@ -1,0 +1,23 @@
+@import "./_colours.scss";
+@import "./_common.scss";
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+
+  background-color: white;
+  height: 100%;
+
+  @include flex-column();
+  @include flex-centered();
+}
+
+.list {
+  @include flex-column();
+  justify-content: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 10px;
+}

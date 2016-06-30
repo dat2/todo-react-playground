@@ -1,0 +1,5 @@
+# nodejs stuff
+node_modules
+
+# frontend stuff
+bundle.js

@@ -1,0 +1,14 @@
+@import "./_common";
+
+.container {
+  @include flex-row();
+  align-items: center;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+.text {
+  margin-left: 10px;
+}
