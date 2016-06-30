@@ -4,7 +4,6 @@ export default function(Component) {
   class Themed extends React.Component {
     render() {
       const { theme } = this.context;
-      console.log(theme);
       return <Component {...this.props} theme={theme} />;
     }
   }

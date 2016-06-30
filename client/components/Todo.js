@@ -5,7 +5,8 @@ import Themed from './Themed';
 
 class Todo extends React.Component {
   render() {
-    const { text, complete } = this.props;
+    const { text, complete, theme } = this.props;
+    console.log(theme);
 
     return (
       <div className={`${styles.container} ${complete ? styles.complete : ''}`}>
