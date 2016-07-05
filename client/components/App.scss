@@ -11,9 +11,9 @@
   @include flex-centered();
 }
 
-.list {
-  @include flex-column();
-  justify-content: center;
+.lists {
+  @include flex-row();
+  @include flex-centered();
 }
 
 .title {

@@ -1,0 +1,6 @@
+@import "./_common.scss";
+
+.container {
+  @include flex-row();
+  justify-content: center;
+}

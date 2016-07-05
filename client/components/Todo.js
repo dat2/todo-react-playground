@@ -4,14 +4,14 @@ import styles from './Todo.scss';
 import Themed from './Themed';
 
 class Todo extends React.Component {
+
   render() {
-    const { text, complete, theme } = this.props;
-    console.log(theme);
+    const { text, isComplete, theme, edit, complete } = this.props;
 
     return (
-      <div className={`${styles.container} ${complete ? styles.complete : ''}`}>
-        <input type='checkbox' />
-        <p className={styles.text}>{ text }</p>
+      <div className={`${styles.container} ${isComplete ? styles.complete : ''}`}>
+        <input type='checkbox' checked={isComplete} onChange={e => complete(e.target.checked)}/>
+        <input className={styles.text} placeholder='bruh put something in here' value={text} onChange={e => edit(e.target.value)}/>
       </div>
     );
   }

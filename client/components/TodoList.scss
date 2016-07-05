@@ -1,0 +1,9 @@
+@import "./_common.scss";
+@import "./_colours.scss";
+
+.list {
+  @include flex-column();
+  justify-content: center;
+
+  border: 1px solid $green;
+}

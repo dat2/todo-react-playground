@@ -1,12 +1,7 @@
 import React from 'react';
 import styles from './App.scss';
 
-import Todo from './Todo';
-
-const todos = [
-  { text: 'implement todo list', complete: false },
-  { text: 'include css modules', complete: true }
-];
+import TodoListBoardContainer from '../containers/TodoListBoardContainer';
 
 class App extends React.Component {
 
@@ -22,19 +17,13 @@ class App extends React.Component {
     return { theme: this.state.theme };
   }
 
-  onThemeChange() {
-
-  }
-
   render() {
     return (
       <div className={styles.container}>
         <h1 className={styles.title}>To Do</h1>
 
-        <div className={styles.list}>
-          {
-            todos.map((todo, i) => <Todo {...todo} key={i} />)
-          }
+        <div className={styles.lists}>
+          <TodoListBoardContainer />
         </div>
       </div>
     );
